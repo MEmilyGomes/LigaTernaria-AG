@@ -16,24 +16,43 @@
 
 ## 📝 Descrição
 <p align="justify">
-Este projeto otimiza a composição de ligas metálicas ternárias, tanto ao usar funções Python adaptadas para problemas de maximização, quanto ao criar funções específicas para o problema das ligas ternárias. O foco é maximizar a diferença entre o valor da liga e seu peso molecular. Para isso, buscou-se ligas com maior valor e menor peso atômico.
+Este projeto tem como objetivo encontrar a liga ternária leve de maior custo. Ou seja, queremos identificar, por meio de algoritmo genético, uma combinação de três elementos em que o código minimize o peso atômico e maximize o valor da liga. Diante disso, transformamos o problema multiobjetivo em um problema monoobjetivo ao considerar que os melhores indivíduos são aqueles que maximizam a diferença entre o valor da liga e seu peso molecular. Construímos os indivíduos de forma que os três primeiros genes representem os elementos presentes na liga, e os três últimos, as massas associadas a cada elemento. Assim, um indivíduo é representado como: <code>[Elemento1, Elemento2, Elemento3, Peso1, Peso2, Peso3]</code>. Além disso, consideramos a restrição de no mínimo 5 gramas para cada elemento.
 </p>
 
 ## 📔 Notebooks e arquivos do projeto
+* `Imagens/logo_Ilum-CNPEM.png` — Imagem da instituição Ilum - CNPEM.  
+* `funcoes_liga.py` — Script com as funções utilizadas no projeto de ligas ternárias.  
+* `ligaternaria.ipynb` — Notebook principal do projeto de ligas ternárias.
 
-## 🔢 Resultados obtidos
+## 🪼 Funções adaptadas para o problema das ligas ternárias
+
+### <code>Função Objetivo</code>  
+<p align="justify">
+Para computar o fitness dos indivíduos, definiu-se que seria calculada a diferença entre o valor da liga e seu peso molecular, pois desejamos o maior valor possível e o menor peso atômico. Assim, quanto maior a diferença, melhor o desempenho do indivíduo — atendendo ao objetivo de maximizar o valor e minimizar o peso molecular.
+</p>
+
+### <code>Cruzamento</code>  
+<p align="justify">
+Nessa etapa, optamos por cruzar apenas a parte dos elementos do candidato, ou seja, os três primeiros genes. Isso porque, com a restrição do peso máximo, cruzar também os pesos poderia gerar muitos indivíduos inválidos.
+</p>
+
+### <code>Mutação da Massa</code>  
+<p align="justify">
+Para realizar essa mutação, sorteamos um dos pesos para mantê-lo fixo. Em seguida, sorteamos um segundo peso entre 5g e o valor máximo permitido, desconsiderando o peso já fixado. Com esses dois valores definidos, o terceiro peso é calculado de forma que a soma total continue respeitando as restrições do problema.
+</p>
+
+### <code>Mutação do Elemento</code>  
+<p align="justify">
+Para realizar essa mutação, sorteia-se um dos três elementos da liga para ser alterado. Em seguida, escolhe-se aleatoriamente um novo elemento possível — exceto aqueles que já estão presentes no indivíduo — garantindo, assim, a criação de um indivíduo válido.
+</p>
+
 
 ## 😁 Conclusão
 
 ## 🖇️ Informações técnicas
-<!--
 * Linguagem de programação: `Python 3.9`
 * Software:  `Jupyter Notebook`
-* **Bibliotecas e Módulos:** `torch`, `torchvision`, `torchvision.datasets`, `torchvision.transforms`, `torch.utils.data.random_split`, `torch.utils.data.DataLoader`, `torch.nn`, `torch.nn.functional`, `torch.optim`, `matplotlib.pyplot`, `os`
--->
-
-## 👩‍🦳 Referências
-
+* **Bibliotecas e Módulos:** `random`
 
 ## 🧠 Contribuições dos Colaboradores
 <!--
