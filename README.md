@@ -46,8 +46,9 @@ Para realizar essa mutação, sorteamos um dos pesos para mantê-lo fixo. Em seg
 Para realizar essa mutação, sorteia-se um dos três elementos da liga para ser alterado. Em seguida, escolhe-se aleatoriamente um novo elemento possível — exceto aqueles que já estão presentes no indivíduo — garantindo, assim, a criação de um indivíduo válido.
 </p>
 
-
 ## 😁 Conclusão
+<p align="justify">
+Portanto, neste notebook foi possível implementar um código de algoritmo genético que resolve o problema das ligas ternárias — em que se deseja aumentar o valor da liga e diminuir o peso molecular. Um desafio do projeto foi identificar como seria calculado o fitness, já que a ordem de grandeza entre as massas, assim como entre os valores por quilograma dos elementos, varia drasticamente. Contudo, consideramos que obtivemos um excelente resultado, visto que o código convergiu para ligas compostas por elementos de altíssimo valor associado e massas que, embora não sejam as menores, também não estão muito distantes da massa de outros elementos. </p>
 
 ## 🖇️ Informações técnicas
 * Linguagem de programação: `Python 3.9`
@@ -55,17 +56,16 @@ Para realizar essa mutação, sorteia-se um dos três elementos da liga para ser
 * **Bibliotecas e Módulos:** `random`
 
 ## 🧠 Contribuições dos Colaboradores
-<!--
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/172424739?v=4" width=115><br><sub>Lorena Ribeiro Nascimento</sub>](https://github.com/Lorena881)<br> [<sub>Ilum - CNPEM</sub>](https://ilum.cnpem.br/)<br> [<sub>Currículo Lattes</sub>]()<br> [<sub>Linkedin</sub>]() | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/172424897?v=4" width=115><br><sub> Maria Emily Nayla</sub>](https://github.com/MEmilyGomes)<br> [<sub>Ilum - CNPEM</sub>](https://ilum.cnpem.br/)<br> [<sub>Currículo Lattes</sub>](http://lattes.cnpq.br/9482558334105708)<br> | [<img loading="lazy" src="https://github.com/user-attachments/assets/463d4753-7fa4-4a42-aa54-409e4150bb51" width=115><br> <sub> Prof. Dr. Daniel R. Cassar </sub>](https://github.com/drcassar)<br> [<sub>Ilum - CNPEM</sub>](https://ilum.cnpem.br/)<br> [<sub>Currículo Lattes</sub>](http://lattes.cnpq.br/1717397276752482) | 
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/172425049?v=4" width=115><br><sub>Ana Luz Pereira Mendes</sub>](https://github.com/LuzMendes)<br> [<sub>Ilum - CNPEM</sub>](https://ilum.cnpem.br/)<br> | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/172424897?v=4" width=115><br><sub> Maria Emily Nayla</sub>](https://github.com/MEmilyGomes)<br> [<sub>Ilum - CNPEM</sub>](https://ilum.cnpem.br/)<br> [<sub>Currículo Lattes</sub>](http://lattes.cnpq.br/9482558334105708)<br> | [<img loading="lazy" src="https://github.com/user-attachments/assets/463d4753-7fa4-4a42-aa54-409e4150bb51" width=115><br> <sub> Prof. Dr. Daniel R. Cassar </sub>](https://github.com/drcassar)<br> [<sub>Ilum - CNPEM</sub>](https://ilum.cnpem.br/)<br> [<sub>Currículo Lattes</sub>](http://lattes.cnpq.br/1717397276752482) | 
 | :---: | :---: | :---: | 
--->
+
 
 #### Para o Projeto:
-* Ana Luz: 
-* Emily Gomes: 
+* **Ana Luz**: Implementação das funções para criar a população, cruzamento e mutação de massas, além da escrita do notebook.  
+* **Emily Gomes**: Implementação das funções objetivo e de mutação de elemento, além da escrita do notebook.
 
 #### Para o Repositório GitHub:
-* Ana Luz: 
-* Emily Gomes: README
+* **Ana Luz**: Upload do notebook principal.  
+* **Emily Gomes**: README e upload do script.
 
 **Orientação:** Prof. Dr. Daniel R. Cassar.
