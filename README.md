@@ -8,12 +8,6 @@
 <p align="center"><strong>Autoras:</strong> Ana Luz Pereira Mendes e Maria Emily Nayla Gomes da Silva</p>
 <p align="center"><strong>Orientador:</strong> Prof. Dr. Daniel R. Cassar</p>
 
-
-<p align="center">
-<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
-</p>
-
-
 ## 📝 Descrição
 <p align="justify">
 Este projeto tem como objetivo encontrar a liga ternária leve de maior custo. Ou seja, queremos identificar, por meio de algoritmo genético, uma combinação de três elementos em que o código minimize o peso atômico e maximize o valor da liga. Diante disso, transformamos o problema multiobjetivo em um problema monoobjetivo ao considerar que os melhores indivíduos são aqueles que maximizam a diferença entre o valor da liga e seu peso molecular. Construímos os indivíduos de forma que os três primeiros genes representem os elementos presentes na liga, e os três últimos, as massas associadas a cada elemento. Assim, um indivíduo é representado como: <code>[Elemento1, Elemento2, Elemento3, Peso1, Peso2, Peso3]</code>. Além disso, consideramos a restrição de no mínimo 5 gramas para cada elemento.
